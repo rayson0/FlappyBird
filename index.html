@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Flappy Bird!</title>
+ <link rel="icon" href="img/bird4.png" type="image/x-png">
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id = 'canvas_div'>
+  <div class = 'texts_div'>
+    <p id = 'text1'>
+    </p>
+    <p id = 'text3'>
+    </p>
+  </div>
+  <div class = 'can_btn elem_canvas_div'>
+    <canvas id="canvas" width="288" height="512" class = 'el'>
+    </canvas>
+    <div class = 'btns_div el'>
+      <div class = 'two_columns_bird'>
+        <button onclick = 'stopGame()' class = 'btn pause'>
+        </button>
+        <div class = 'placeholder btn'>
+          <p class = 'placeholder_p'>
+            Кнопка-пауза
+          </p>
+        </div>
+      </div>
+      <div class = 'two_columns_bird'>
+        <button class = 'btn score'>
+        </button>
+        <div class = 'placeholder btn'>
+          <p class = 'placeholder_p'>
+            Подсчет кол-ва очков
+          </p>
+        </div>
+      </div>
+      <p class = 'text_with_skin'>
+        Выбери скин:
+      </p>
+      <div class = 'two_columns_bird'>
+          <button onclick = 'changeModel("bird")' class = 'btn bird_ico bird'>
+          </button>
+          <button onclick = 'changeModel("bird2")' class = 'btn bird_ico bird2'>
+          </button>
+      </div>
+      <div class = 'two_columns_bird'>
+          <button onclick = 'changeModel("bird3")' class = 'btn bird_ico bird3'>
+          </button>
+          <button onclick = 'changeModel("bird4")' class = 'btn bird_ico bird4'>
+          </button>
+      </div>
+      <div class = 'two_columns_bird'>
+          <button onclick = 'changeModel("bird5")' class = 'btn bird_ico bird5'>
+          </button>
+          <button onclick = 'changeModel("bird6")' class = 'btn bird_ico bird6'>
+          </button>
+      </div>
+    </div>
+  </div>
+  <p id = 'text2' class = 'elem_canvas_div'>
+  </p>
+</div>
+<div class = 'end_box'>
+  <p id = 'score'>
+  </p>
+  <select class = 'choice_lvl'>
+    <option value = 'easy'> Easy </option>
+    <option value = 'easy-middle'> Easy-middle </option>
+    <option value = 'middle'> Middle </option>
+    <option value = 'middle-hard'> Middle-hard </option>
+    <option value = 'hard'> Hard </option>
+  </select>
+</div>
+
+
+ <script src="game.js"></script>
+</body>
+</html>

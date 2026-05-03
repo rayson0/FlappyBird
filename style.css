@@ -1,0 +1,167 @@
+body {
+	font-family: 'Pix';
+}
+#canvas {
+	z-index: 5;
+}
+@font-face {
+	font-family: 'Pix';
+	src: url('fonts/PIXY/PIXY.otf')
+}
+#canvas, #text3, #text2, #text1, #score {
+	font-family: 'Pix';
+	border: 3px solid black;
+	border-radius: 1vh;
+	font-weight: bold;
+}
+#canvas_div {
+	display: flex;
+	margin: 0 1%;
+	height: 100%;
+}
+#text2 {
+	display: none;
+	width: 40%;
+}
+#text1, #text2 {
+	text-indent: 30px;
+}
+#text1, #text2, #score {
+	font-size: 28px;
+}
+.texts_div {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	width: 22%;
+}
+#text2, #text1, #score {
+	padding: 1.5%;
+}
+#text3 {
+	padding: 0 2% 4% 2%;
+	display: none;
+	font-size: 28px;
+}
+.can_btn {
+	display: flex;
+	flex-direction: row;
+}
+.btn {
+	width: 77px;
+	height: 77px;
+	border: 3px solid black;
+	border-radius: 14%;
+}
+.btn:hover {
+	box-shadow: 0 0 5px 0.6px rgba(0, 0, 0, 0.5);
+}
+.pause {
+	background-image: url('img/pause.png');
+	background-size: cover;
+}
+.score {
+ 	line-height: 0px;
+	font-family: 'Pix';
+	font-size: 70px;
+	color: red;
+}
+.el {
+	margin: 0 9px;
+}
+#score {
+	margin-left: 1%;
+	width: 180px;
+	text-align: center;
+}
+#score_without_text {
+	/* margin: 4% auto 0 auto; */
+	font-family: 'Pix';
+	z-index: 7;
+	font-size: 54px;
+	color: red;
+	background: red;
+}
+.btns_div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 170px;
+}
+.bird {
+	background-image: url('img/bird1.png')
+}
+.bird2 {
+	background-image: url('img/bird2.png')
+}
+.bird3 {
+	background-image: url('img/bird3.png')
+}
+.bird4 {
+	background-image: url('img/bird4.png')
+}
+.bird5 {
+	background-image: url('img/bird5.png')
+}
+.bird6 {
+	background-image: url('img/bird6.png')
+}
+.bird, .bird2, .bird3, .bird4, .bird5, .bird6 {
+	background-size: 80%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.two_columns_bird {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	justify-content: space-between;
+}
+.text_with_skin {
+	font-size: 19px;
+	text-align: center;
+	font-weight: bold;
+}
+.placeholder {
+	display: none;
+	width: 70px;
+	height: 70px;
+}
+.elem_canvas_div {
+	margin-left: 1%;
+}
+.placeholder_p {
+	font-size: 14.5px;
+	text-align: center;
+}
+.placeholder_bird {
+	display: none;
+	width: 75px;
+	height: 30px;
+}
+.btns_bird {
+	display: flex;
+}
+.col {
+	flex-direction: column;
+}
+.row {
+	flex-direction: row;
+}
+.bird_ico {
+	font-size: 12.3px;
+	font-family: 'Pix'
+}
+.end_box {
+	display: flex;
+	flex-direction: row;
+}
+.choice_lvl {
+	height: 30px;
+	width: 120px;
+	text-align: center;
+	margin: auto 0 auto 2%;
+	border-radius: 20px;
+	font-family: 'Pix';
+	font-size: 18px;
+}
